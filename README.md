@@ -19,3 +19,4 @@ go run main.go mirror --url=http://go-colly.org/articles/
 [ ] - Gracefull Shutdown <br/>
 [ ] - Better asset download control, right now I do have a way to control already visited pages, but the same is not true for assets download. <br/>
 [ ] - Automated tests
+[ ] - Maybe, I'd like to try a version with no colly framework, and for that I probably would use a BTree to store site's hierarchy. With that, I could traverse the tree in pre and post order to accelerate the crawler process, also I could store these struct to use as some kind of progress control, in addition to that, I also would have an Map to control assets download and prevent possible duplications. In the boostrap process I would load those extra sctructs to memory and persist them by the end or while the Gracefull Shutdown is happening.
