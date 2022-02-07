@@ -12,3 +12,9 @@ Then, just execute the command below
 go run main.go mirror --url={provide the url to be crawled}
 go run main.go mirror --url=http://go-colly.org/articles/
 ```
+
+
+## TO-DO
+
+[ ] - Gracefull Shutdown <br/>
+[ ] - Better asset download control,including a resume control option, since it's only working for already visited urls
